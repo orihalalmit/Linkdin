@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 # specifies the path to the chromedriver.exe
-driver = webdriver.Chrome(executable_path=r"C:\Users\ORI\PycharmProjects\selenium\chromedriver.exe")
+driver = webdriver.Chrome(executable_path=r"path")
 driver.implicitly_wait(1)
 # driver.get method() will navigate to a page given by the URL address
 driver.get('https://www.linkedin.com')
@@ -14,7 +14,7 @@ username = driver.find_element_by_name('session_key')
 
 
 # send_keys() to simulate key strokes
-username.send_keys('orihalumi1@gmail.com')
+username.send_keys('email')
 
 # locate password form by_class_name
 password = driver.find_element_by_name('session_password')
